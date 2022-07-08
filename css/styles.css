@@ -1,1 +1,63 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/Gilroy-Regular.woff), url(../font/Gilroy-Regular.woff2);
+}
 
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../font/Gilroy-Semibold.woff), url(../font/Gilroy-Semibold.woff2);
+}
+
+:root {
+  --bg-color-primery: #191919;
+  --color-text-primery: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  background-color: var(--bg-color-primery);
+  color: var(--color-text-primery);
+
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

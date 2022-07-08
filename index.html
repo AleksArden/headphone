@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header container">
       <div class="header-container">
         <a class="header-logo" href="/">
-          <img
-            class="header-image"
-            src="./images/logo/bose-logo 2.svg"
-            alt="логотип"
+          <svg
+            class="header-logo"
             width="130"
-            height="15"
-          />
+            hight="16"
+            aria-label="логотип компании"
+          >
+            <use href="./images/icons/logo.svg#logo-icon"></use>
+          </svg>
         </a>
         <nav class="header-nav">
           <ul>
