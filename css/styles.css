@@ -17,6 +17,7 @@
 :root {
   --bg-color-primery: #191919;
   --color-text-primery: rgba(255, 255, 255, 0.8);
+  --color-title: #e7e7e7;
 }
 
 body {
@@ -60,4 +61,35 @@ a {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: block;
+  color: var(--color-title);
+}
+
+.icon-logo {
+  fill: currentColor;
+}
+
+.nav-list {
+  display: flex;
+  gap: 77px;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 64px;
+  padding-bottom: 70px;
 }
