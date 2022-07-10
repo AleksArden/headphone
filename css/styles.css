@@ -18,6 +18,9 @@
   --bg-color-primery: #191919;
   --color-text-primery: rgba(255, 255, 255, 0.8);
   --color-title: #e7e7e7;
+  --color-btn: rgba(255, 255, 255, 0.9);
+  --bg-btn-hero: #df3d3a;
+  --bg-btn-hover-hero: #b5302d;
 }
 
 body {
@@ -63,6 +66,9 @@ a {
   margin-right: auto;
 }
 
+.section {
+  margin-bottom: 170px;
+}
 /* header */
 
 .header-container {
@@ -85,11 +91,76 @@ a {
   gap: 77px;
 
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 }
 
 .nav-link {
   display: block;
   padding-top: 64px;
   padding-bottom: 70px;
+}
+/* hero */
+
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+}
+/* .hero-content {
+  margin-right: 66px;
+} */
+.hero-text {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.hero-first-text {
+  margin-bottom: 36px;
+}
+
+.hero-title-container {
+  padding-left: 104px;
+  padding-top: 110px;
+}
+.hero-title-container {
+  width: 574px;
+}
+.hero-title {
+  margin-bottom: 60px;
+  color: var(--color-title);
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 1;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  padding: 22px 95px;
+  border: 0 solid transparent;
+  background-color: var(--bg-btn-hero);
+  color: var(--color-btn);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-btn-hero) 50%,
+    var(--bg-btn-hover-hero) 50%
+  );
+  transition: background-position 300ms cubic-bezier(0.19, 1, 0.22, 1) 100ms,
+    color 500ms ease 0ms, background-color 500ms ease;
+}
+
+.hero-btn:hover {
+  color: var(--color-btn);
+  background-color: var(--bg-btn-hover-hero);
+  background-position: -100% 100%;
+}
+
+.hero-image {
+  margin-right: -80px;
 }
