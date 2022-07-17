@@ -210,3 +210,101 @@ a {
 .design-subtitle {
   margin-bottom: 20px;
 }
+
+/* benefits */
+
+.benefits-title {
+  margin-left: 110px;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 184px;
+  margin-left: 110px;
+}
+
+.benefits-container-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* promo */
+
+.promo-title {
+  margin-left: 660px;
+}
+
+.promo-image {
+  min-width: 1440px;
+  margin-left: -80px;
+  margin-bottom: 50px;
+}
+
+.promo-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 110px;
+}
+
+.promo-substyle {
+  margin-bottom: 20px;
+}
+
+.promo-item {
+  width: 510px;
+}
+.promo-item:nth-child(2) {
+  width: 470px;
+}
+
+/* features */
+
+.features-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 170px;
+  margin-left: 110px;
+}
+
+.features-subtitle {
+  margin-bottom: 20px;
+}
+
+.features-image {
+  margin-right: -80px;
+}
+
+/* garanties */
+
+.garanties-container {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.garanties-image {
+  margin-left: -80px;
+}
+
+.garanties-content {
+  width: 380px;
+}
+
+.garanties-item {
+  margin-bottom: 40px;
+}
+
+.garanties-icon {
+  margin-bottom: 24px;
+}
+
+.garanties-subtitle {
+  margin-bottom: 16px;
+}
