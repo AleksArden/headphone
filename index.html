@@ -14,71 +14,130 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header__container container">
-        <a class="logo" href="/">
-          <svg
-            class="logo__icon logo__icon--big"
-            width="130"
-            height="16"
-            aria-label="логотип компании"
+      <div class="container">
+        <div class="mobile-header">
+          <a class="logo" href="">
+            <svg
+              class="logo__icon logo__icon--small"
+              width="100"
+              height="12"
+              aria-label="логотип компании"
+            >
+              <use href="./images/icons.svg#icon-logo-small"></use>
+            </svg>
+          </a>
+          <button
+            class="mobile-header__btn-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
           >
-            <use href="./images/icons.svg#icon-logo"></use>
-          </svg>
-          <svg
-            class="logo__icon logo__icon--small"
-            width="100"
-            height="12"
-            aria-label="логотип компании"
-          >
-            <use href="./images/icons.svg#icon-logo-small"></use>
-          </svg>
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li>
-              <a class="nav__link" href="#">Характеристики</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">История</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Отзывы</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Оплата и доставка</a>
-            </li>
-          </ul>
-        </nav>
+            <svg class="header__icon" width="22" height="12">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+          <div class="menu js-menu-container" id="mobile-menu">
+            <a class="menu__logo logo" href="">
+              <svg
+                class="logo__icon logo__icon--small"
+                width="100"
+                height="12"
+                aria-label="логотип компании"
+              >
+                <use href="./images/icons.svg#icon-logo-small"></use>
+              </svg>
+            </a>
+            <button class="menu__close-btn js-close-menu" type="button">
+              <svg
+                class="menu__icon"
+                width="24"
+                height="24"
+                aria-label="кнопка закрытитя меню"
+              >
+                <use href="./images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Характеристики</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">История</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Оплата и доставка</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="desktop-header">
+          <a class="logo" href="/">
+            <svg
+              class="logo__icon logo__icon--big"
+              width="130"
+              height="16"
+              aria-label="логотип компании"
+            >
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <nav>
+            <ul class="desktop-header__list">
+              <li>
+                <a class="desktop-header__link" href="#">Характеристики</a>
+              </li>
+              <li>
+                <a class="desktop-header__link" href="#">История</a>
+              </li>
+              <li>
+                <a class="desktop-header__link" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="desktop-header__link" href="#">Оплата и доставка</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <!-- hero section -->
-      <!-- <section class="hero section">
-        <div class="container hero-container">
-          <div class="hero-content">
-            <p class="hero-text">
+      <!-- hero -->
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <p class="hero__text">
               Наушники с шумоподавлением, <br />
               которые способны на многое
             </p>
-            <p class="hero-text">
+            <p class="hero__text">
               До 20 часов <br />
               воспроизведения
             </p>
 
-            <div class="hero-title-container">
-              <h1 class="hero-title">Наушники Bose NC 700</h1>
-              <button class="hero-btn" type="button">Заказать</button>
+            <div class="hero__title-container">
+              <h1 class="hero__title">Наушники Bose NC 700</h1>
+              <button class="hero__btn" type="button">Заказать</button>
             </div>
           </div>
           <img
-            class="hero-image"
-            src="./images/hero/hero.jpg"
+            class="hero__image"
+            srcset="
+              ./images/hero/mobile/hero-mob280.jpg    280w,
+              ./images/hero/mobile/hero-mob560@2x.jpg 560w,
+              ./images/hero/mobile/hero-mob840@3x.jpg 840w
+            "
+            src="./images/hero/mobile/hero-mob280.jpg"
             alt="наушники"
-            width="700"
-            height="598"
+            sizes="(min-width: 1440px) 700px , (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
           />
         </div>
-      </section> -->
+      </section>
       <!-- design section -->
       <!-- <section class="design section">
         <div class="container design-container">
@@ -394,5 +453,12 @@
         </ul>
       </div>
     </footer> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

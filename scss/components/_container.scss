@@ -9,9 +9,13 @@
 
   @include mq(tab) {
     max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @include mq(desk) {
-    max-width: 1360px;
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
