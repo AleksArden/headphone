@@ -1,13 +1,18 @@
 .hero {
   @include section(0);
+  @include mq(tab) {
+    @include section(0, 50px);
+  }
 }
 
-// .hero-container {
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: space-between;
-//     gap: 86px;
-// }
+.hero__container {
+  @include mq(tab) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
 
 .hero__text {
   font-size: 14px;
@@ -21,24 +26,27 @@
   }
 }
 
-.hero__text:not(:last-child) {
+.hero__text:nth-child(1) {
   margin-bottom: 16px;
   @include mq(desk) {
     margin-bottom: 36px;
   }
 }
 
-@include mq(mob-only) {
-  .hero__text:nth-child(2) {
-    margin-bottom: 32px;
+.hero__text:nth-child(2) {
+  margin-bottom: 32px;
+  @include mq(tab-only) {
+    margin-bottom: 105px;
   }
 }
 
-// .hero-title-container {
-//     padding-left: 104px;
-//     padding-top: 110px;
-//     width: 574px;
-// }
+@include mq(desk) {
+  .hero__title-container {
+      padding-left: 104px;
+      padding-top: 110px;
+      width: 574px;
+    }
+}
 
 .hero__title {
   margin-bottom: 32px;
@@ -49,6 +57,11 @@
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  @include mq(tab) {
+    margin-bottom: 40px;
+
+    font-size: 42px;
+  }
 
   @include mq(desk) {
     margin-bottom: 60px;
@@ -63,9 +76,17 @@
 }
 
 .hero__btn {
-    @extend %btn;
+  @extend %btn;
+  @include mq(mob-only) {
     margin-bottom: 32px;
+  }
+
 }
-// .hero-image {
-//     margin-right: -80px;
-// }
+.hero__image {
+  @include mq(tab) {
+    margin-right: -60px;
+  }
+  @include mq(desk) {
+    margin-right: -80px;
+  }
+}

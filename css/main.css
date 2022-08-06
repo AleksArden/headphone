@@ -21,8 +21,36 @@
   --bg-btn-hover-hero: #b5302d;
 }
 
+.design__title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+@media screen and (min-width: 1440px) {
+  .design__title {
+    margin-bottom: 50px;
+    font-size: 54px;
+  }
+}
+
+.design__subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--color-title);
+}
+@media screen and (min-width: 1440px) {
+  .design__subtitle {
+    font-size: 28px;
+  }
+}
+
 .hero__btn {
-  padding: 20px 100px;
+  padding: 19px 100px 20px 101px;
   border: none;
   background-color: var(--bg-btn-hero);
   color: var(--color-btn);
@@ -38,16 +66,21 @@
   -webkit-transition: background-position 300ms cubic-bezier(0.19, 1, 0.22, 1) 100ms, color 500ms ease 0ms, background-color 500ms ease;
   transition: background-position 300ms cubic-bezier(0.19, 1, 0.22, 1) 100ms, color 500ms ease 0ms, background-color 500ms ease;
 }
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    padding: 19px 107px 20px 108px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__btn {
+    font-size: 20px;
+    padding: 22px 95px;
+  }
+}
 .hero__btn:hover, .hero__btn:focus {
   color: var(--color-btn);
   background-color: var(--bg-btn-hover-hero);
   background-position: -100% 100%;
-}
-@media screen and (min-width: 1440px) {
-  .hero__btn:hover, .hero__btn:focus {
-    font-size: 20px;
-    padding: 22px 95px;
-  }
 }
 
 body {
@@ -55,8 +88,14 @@ body {
   color: var(--color-text-primery);
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 20px;
+    line-height: 1.45;
+  }
 }
 
 h1,
@@ -220,6 +259,27 @@ a {
   padding-top: 0;
   padding-bottom: 26px;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 60px;
+  }
+}
 
 .hero__text {
   font-size: 14px;
@@ -237,18 +297,29 @@ a {
   }
 }
 
-.hero__text:not(:last-child) {
+.hero__text:nth-child(1) {
   margin-bottom: 16px;
 }
 @media screen and (min-width: 1440px) {
-  .hero__text:not(:last-child) {
+  .hero__text:nth-child(1) {
     margin-bottom: 36px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
+.hero__text:nth-child(2) {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .hero__text:nth-child(2) {
-    margin-bottom: 32px;
+    margin-bottom: 105px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__title-container {
+    padding-left: 104px;
+    padding-top: 110px;
+    width: 574px;
   }
 }
 .hero__title {
@@ -259,6 +330,12 @@ a {
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-bottom: 40px;
+    font-size: 42px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .hero__title {
@@ -272,8 +349,21 @@ a {
   }
 }
 
-.hero__btn {
-  margin-bottom: 32px;
+@media screen and (max-width: 767.98px) {
+  .hero__btn {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__image {
+    margin-right: -60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__image {
+    margin-right: -80px;
+  }
 }
 
 .container {
@@ -321,31 +411,26 @@ a {
   }
 }
 
-/* design */
-.design-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 150px;
+.design {
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
-.design-emage {
-  margin-left: -80px;
+.design__item:nth-child(1) {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .design__item:nth-child(1) {
+    margin-bottom: 54px;
+  }
 }
 
-.design-list {
-  width: 510px;
+.design__item:nth-child(2) {
+  margin-bottom: 32px;
 }
 
-.design-item:not(:last-child) {
-  margin-bottom: 50px;
-}
-
-.design-subtitle {
-  margin-bottom: 20px;
+.design__subtitle {
+  margin-bottom: 16px;
 }
 
 /* benefits */
