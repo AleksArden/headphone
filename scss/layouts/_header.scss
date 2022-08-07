@@ -3,11 +3,8 @@
 }
 
 .mobile-header {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+@include flexed(center, space-between);
+    
     padding: 30px 0;
 
     @include mq(tab-only) {
@@ -30,9 +27,7 @@
 }
 
 .desktop-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexed(center, space-between);
 
     @include mq(no-desk) {
         display: none;
@@ -40,7 +35,7 @@
 }
 
 .desktop-header__list {
-    display: flex;
+   @include flexed(null, null);
     gap: 77px;
 
     font-size: 16px;

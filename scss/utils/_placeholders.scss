@@ -6,6 +6,9 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-title);
+  @include mq(tab) {
+    font-size: 30px;
+  }
   @include mq(desk) {
     margin-bottom: 50px;
     font-size: 54px;

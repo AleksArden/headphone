@@ -7,9 +7,7 @@
 
 .hero__container {
   @include mq(tab) {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    @include flexed(flex-start, space-between);
     gap: 60px;
   }
 }

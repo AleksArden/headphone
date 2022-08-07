@@ -30,6 +30,11 @@
   text-transform: uppercase;
   color: var(--color-title);
 }
+@media screen and (min-width: 768px) {
+  .design__title {
+    font-size: 30px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .design__title {
     margin-bottom: 50px;
@@ -90,6 +95,12 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.45;
+  }
 }
 @media screen and (min-width: 1440px) {
   body {
@@ -414,23 +425,74 @@ a {
 .design {
   padding-top: 26px;
   padding-bottom: 26px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+@media screen and (min-width: 768px) {
+  .design {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .design__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .design__container {
+    gap: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .design__list {
+    width: 510px;
+  }
+}
 .design__item:nth-child(1) {
   margin-bottom: 24px;
 }
 @media screen and (min-width: 1440px) {
   .design__item:nth-child(1) {
-    margin-bottom: 54px;
+    margin-bottom: 40px;
   }
 }
 
-.design__item:nth-child(2) {
-  margin-bottom: 32px;
+@media screen and (max-width: 767.98px) {
+  .design__item:nth-child(2) {
+    margin-bottom: 32px;
+  }
 }
-
 .design__subtitle {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .design__subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .design__image {
+    margin-left: -60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .design__image {
+    margin-left: -80px;
+  }
 }
 
 /* benefits */
