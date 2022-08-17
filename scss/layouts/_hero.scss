@@ -3,6 +3,9 @@
   @include mq(tab) {
     @include section(0, 50px);
   }
+  @include mq(desk) {
+    @include section(0, 85px);
+  }
 }
 
 .hero__container {
@@ -40,10 +43,10 @@
 
 @include mq(desk) {
   .hero__title-container {
-      padding-left: 104px;
-      padding-top: 110px;
-      width: 574px;
-    }
+    padding-left: 104px;
+    padding-top: 110px;
+    width: 574px;
+  }
 }
 
 .hero__title {
@@ -78,7 +81,6 @@
   @include mq(mob-only) {
     margin-bottom: 32px;
   }
-
 }
 .hero__image {
   @include mq(tab) {

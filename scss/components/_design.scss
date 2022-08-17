@@ -3,7 +3,9 @@
   @include mq(tab) {
     @include section(50px, 50px);
   }
-  @include section(85px, 85px);
+  @include mq(desk) {
+    @include section(85px, 85px);
+  }
 }
 
 .design__container {

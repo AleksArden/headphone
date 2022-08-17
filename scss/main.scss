@@ -1,42 +1,9 @@
-@import "./utils/module";
-@import "./base/module";
-@import "./layouts/module";
-@import "./components/module";
-
-
-
-
-
-
-
-
-
-
-
+@import './utils/module';
+@import './base/module';
+@import './layouts/module';
+@import './components/module';
 
 /* benefits */
-
-.benefits-title {
-  margin-left: 110px;
-}
-
-.benefits-list {
-  display: flex;
-  gap: 184px;
-  margin-left: 110px;
-}
-
-.benefits-container-item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.benefits-item {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
 
 /* promo */
 

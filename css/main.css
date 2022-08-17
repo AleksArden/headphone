@@ -21,7 +21,7 @@
   --bg-btn-hover-hero: #b5302d;
 }
 
-.design__title {
+.benefits__title, .design__title {
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 24px;
@@ -31,12 +31,12 @@
   color: var(--color-title);
 }
 @media screen and (min-width: 768px) {
-  .design__title {
+  .benefits__title, .design__title {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .design__title {
+  .benefits__title, .design__title {
     margin-bottom: 50px;
     font-size: 54px;
   }
@@ -276,6 +276,12 @@ a {
     padding-bottom: 50px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 0;
+    padding-bottom: 85px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero__container {
@@ -425,13 +431,17 @@ a {
 .design {
   padding-top: 26px;
   padding-bottom: 26px;
-  padding-top: 85px;
-  padding-bottom: 85px;
 }
 @media screen and (min-width: 768px) {
   .design {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .design {
+    padding-top: 85px;
+    padding-bottom: 85px;
   }
 }
 
@@ -495,31 +505,33 @@ a {
   }
 }
 
-/* benefits */
-.benefits-title {
-  margin-left: 110px;
+.benefits {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefits {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
 }
 
-.benefits-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 184px;
-  margin-left: 110px;
+.benefits__title {
+  margin-bottom: 32px;
 }
 
-.benefits-container-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+@media screen and (min-width: 768px) {
+  .benefits__transposition {
+    display: none;
+  }
 }
-
-.benefits-item {
+.benefits__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +541,12 @@ a {
   gap: 24px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+/* benefits */
 /* promo */
 .promo-title {
   margin-left: 660px;
