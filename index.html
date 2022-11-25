@@ -192,19 +192,19 @@
           <div class="benefits-container">
             <ul class="benefits__list">
               <li class="benefits__item">
-                <svg width="13" height="13" aria-hidden="true">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
                   <use href="./images/icons.svg#icon-point"></use>
                 </svg>
                 <p>Возможность принимать звонки</p>
               </li>
               <li class="benefits__item">
-                <svg width="13" height="13" aria-hidden="true">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
                   <use href="./images/icons.svg#icon-point"></use>
                 </svg>
                 <p>Насыщенное и мощное звучание</p>
               </li>
               <li class="benefits__item">
-                <svg width="13" height="13" aria-hidden="true">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
                   <use href="./images/icons.svg#icon-point"></use>
                 </svg>
                 <p>Опция активного шумоподавления</p>
@@ -212,20 +212,20 @@
             </ul>
             <ul class="benefits__list">
               <li class="benefits__item">
-                <svg width="13" height="13" aria-hidden="true">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
                   <use href="./images/icons.svg#icon-point"></use>
                 </svg>
                 <p>Непревзойденная система микрофонов</p>
               </li>
 
               <li class="benefits__item">
-                <svg width="13" height="13" aria-hidden="true">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
                   <use href="./images/icons.svg#icon-point"></use>
                 </svg>
                 <p>Поддержка голосовых помощников</p>
               </li>
               <li class="benefits__item">
-                <svg width="13" height="13" aria-hidden="true">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
                   <use href="./images/icons.svg#icon-point"></use>
                 </svg>
                 <p>Аудиоплатформа дополненной реальности Bose AR</p>
@@ -276,133 +276,148 @@
         </div>
       </section>
       <!-- features section -->
-      <!-- <section class="features section">
+      <section class="features">
         <div class="container">
-          <div class="features-container">
-            <div class="features-content">
-              <h2 class="features-title title">Bose AR</h2>
-              <h3 class="features-subtitle subtitle">Фирменная технология</h3>
-              <p class="features-text">
-                Bose AR — это уникальная аудиоплатформа дополненной реальности,
-                что открывает перед вами новые грани звучания. Она позволяет вам
-                оставаться на связи с реальным миром и одновременно погружаться
-                в виртуальную вселенную.
+          <div class="features__container">
+            <div class="features__content">
+              <h2 class="features__title">Bose AR</h2>
+              <h3 class="features__subtitle">Фирменная технология</h3>
+              <p class="features__text">
+                Bose AR — это уникальная аудиоплатформа дополненной реальности, что открывает перед
+                вами новые грани звучания. Она позволяет вам оставаться на связи с реальным миром и
+                одновременно погружаться в виртуальную вселенную.
               </p>
             </div>
             <img
-              class="features-image"
-              src="./images/features/features.jpg"
+              class="features__image"
+              srcset="
+                ./images/features/mobile/features-mob280.jpg        280w,
+                ./images/features/mobile/features-mob560@2x.jpg     560w,
+                ./images/features/mobile/features-mob840@3x.jpg     840w,
+                ./images/features/tablet/features-tab354.jpg        354w,
+                ./images/features/tablet/features-tab708@2x.jpg     708w,
+                ./images/features/tablet/features-tab1062@3x.jpg   1062w,
+                ./images/features/desktop/features-desk700.jpg      700w,
+                ./images/features/desktop/features-desk1400@2x.jpg 1400w,
+                ./images/features/desktop/features-desk2100@3x.jpg 2100w
+              "
+              src="./images/features/desktop/features-desk700.jpg"
               alt="девушка в наушниках"
-              width="700"
-              height="586"
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
             />
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- garanties section -->
-      <!-- <section class="garanties section">
-        <div class="garanties__container container">
-          <img
-            class="garanties__image"
-            src="./images/garanties/garanties.jpg"
-            alt="белые наушники"
-            width="590"
-            height="565"
-          />
-          <div class="garanties__content">
-            <h2 class="garanties__title title">Гарантии</h2>
-            <ul>
-              <li class="garanties__item">
-                <svg
-                  class="garanties__icon"
-                  width="13"
-                  height="13"
-                  aria-hidden="true"
-                >
-                  <use href="./images/icons.svg#icon-point"></use>
-                </svg>
-                <h3 class="garanties__subtitle subtitle">
-                  Гарантия возврата денег в течение 90 дней
-                </h3>
-                <p>
-                  Если вы не удовлетворены продуктом на 100% вы можете вернуть
-                  его обратно и получить полный возврат денег
-                </p>
-              </li>
-              <li>
-                <svg
-                  class="garanties__icon"
-                  width="13"
-                  height="13"
-                  aria-hidden="true"
-                >
-                  <use href="./images/icons.svg#icon-point"></use>
-                </svg>
-                <h3 class="garanties__subtitle subtitle">1 год гарантии</h3>
-                <p>
-                  Вне зависимости от страны вашего проживания, если ваши
-                  наушники сломались, мы вышлем вам новые
-                </p>
-              </li>
-            </ul>
+      <section class="garanties">
+        <div class="container">
+          <div class="garanties__container">
+            <img
+              class="garanties__image"
+              srcset="
+                ./images/garanties/mobile/garanties-mob280.jpg        280w,
+                ./images/garanties/mobile/garanties-mob560@2x.jpg     560w,
+                ./images/garanties/mobile/garanties-mob840@3x.jpg     840w,
+                ./images/garanties/tablet/garanties-tab354.jpg        354w,
+                ./images/garanties/tablet/garanties-tab708@2x.jpg     708w,
+                ./images/garanties/tablet/garanties-tab1062@3x.jpg   1062w,
+                ./images/garanties/desktop/garanties-desk590.jpg      590w,
+                ./images/garanties/desktop/garanties-desk1180@2x.jpg 1180w,
+                ./images/garanties/desktop/garanties-desk1770@3x.jpg 1770w
+              "
+              src="./images/garanties/desktop/garanties-desk590.jpg"
+              alt="белые наушники"
+              sizes="(min-width: 1440px) 590px, (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+            />
+            <div class="garanties__content">
+              <h2 class="garanties__title">Гарантии</h2>
+              <ul>
+                <li class="garanties__item">
+                  <svg class="garanties__icon" width="13" height="13" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-point"></use>
+                  </svg>
+                  <h3 class="garanties__subtitle">Гарантия возврата денег в течение 90 дней</h3>
+                  <p>
+                    Если вы не удовлетворены продуктом на 100% вы можете вернуть его обратно и
+                    получить полный возврат денег
+                  </p>
+                </li>
+                <li class="garanties__item">
+                  <svg class="garanties__icon" width="13" height="13" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-point"></use>
+                  </svg>
+                  <h3 class="garanties__subtitle">1 год гарантии</h3>
+                  <p>
+                    Вне зависимости от страны вашего проживания, если ваши наушники сломались, мы
+                    вышлем вам новые
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- brandhistory section -->
-      <!-- <section class="brandhistory section">
+      <section class="brandhistory">
         <div class="container">
           <div class="brandhistory__container">
-            <div class="brandhistory__contant-left">
-              <h2 class="brandhistory__title title">история создания бренда</h2>
-              <p class="brandhistory-subtext">
-                История Bose Corporation началась с разочарования. В 1956 году
-                аспирант Массачусетского технологического института Амар Боуз
-                (Amar Bose) приобрёл одну из лучших по тем временам стереосистем
-                для своего дома. После нескольких минут прослушивания
-                аудиозаписи его недоумение сменилось разочарованием.
+            <div class="brandhistory__content">
+              <h2 class="brandhistory__title">история <br />создания <br />бренда</h2>
+              <p class="brandhistory__text">
+                История Bose Corporation началась с разочарования. В 1956 году аспирант
+                Массачусетского технологического института Амар Боуз (Amar Bose) приобрёл одну из
+                лучших по тем временам стереосистем для своего дома. После нескольких минут
+                прослушивания аудиозаписи его недоумение сменилось разочарованием.
               </p>
-              <p>
-                С точки зрения Амара звук был настолько плоским и
-                неестественным, что лучше не слушать музыку вовсе, чем слушать
-                её в столь искажённом виде.
-              </p>
+              <img
+                class="brandhistory__image brandhistory__image-top"
+                srcset="
+                  ./images/brand-history/mobile/brandhistory-1-mob280.jpg      280w,
+                  ./images/brand-history/mobile/brandhistory-1-mob560@2x.jpg   560w,
+                  ./images/brand-history/mobile/brandhistory-1-mob840@3x.jpg   840w,
+                  ./images/brand-history/tablet/brandhistory-1-tab354.jpg      354w,
+                  ./images/brand-history/tablet/brandhistory-1-tab708@2x.jpg   708w,
+                  ./images/brand-history/tablet/brandhistory-1-tab1062@3x.jpg 1062w
+                "
+                src="./images/brand-history/tablet/brandhistory-1-tab354.jpg"
+                alt="Трое мужчин рассматривают фотографии"
+                sizes="(min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+              />
 
+              <p class="brandhistory__text">
+                С точки зрения Амара звук был настолько плоским и неестественным, что лучше не
+                слушать музыку вовсе, чем слушать её в столь искажённом виде.
+              </p>
+            </div>
+            <div class="brandhistory__content">
+              <p class="brandhistory__text">
+                Разочарование Боуза переросло в твёрдую решимость – создавать аудиотехнику, которая
+                будет передавать звук безупречно точно и естественно.
+              </p>
               <img
                 class="brandhistory__image"
-                src="./images/brand-history/brand-history1.jpg"
+                srcset="
+                  ./images/brand-history/mobile/brandhistory-2-mob280.jpg    280w,
+                  ./images/brand-history/mobile/brandhistory-2-mob560@2x.jpg 560w,
+                  ./images/brand-history/mobile/brandhistory-2-mob840@3x.jpg 840w
+                "
+                src="./images/brand-history/mobile/brandhistory-2-mob280.jpg"
                 alt="на фотографии основатель компании Амар Боуз"
-                width="290"
-                height="355"
+                sizes="(min-width: 320px) 280px, 100vw"
               />
-            </div>
-            <div class="brandhistory__contant-right">
-              <img
-                class="brandhistory__image-large"
-                src="./images/brand-history/brand-history2.jpg"
-                alt="Трое мужчин рассматривают фотографии"
-                width="700"
-                height="628"
-              />
-              <p class="brandhistory__text">
-                Разочарование Боуза переросло в твёрдую решимость – создавать
-                аудиотехнику, которая будет передавать звук безупречно точно и
-                естественно.
-              </p>
               <svg class="brandhistory__icon" width="34" height="25">
                 <use href="./images/icons.svg#icon-quotes"></use>
               </svg>
-              <p class="brandhistory__text-large">
-                Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и
-                думайте о том, как этого достичь.
+              <p class="brandhistory__quote">
+                Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и думайте о том, как
+                этого достичь.
               </p>
 
-              <p class="brandhistory__text-small">
-                Основатель компании Амар Боуз
-              </p>
+              <p class="brandhistory__sign">Основатель компании Амар Боуз</p>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- review section -->
       <!-- <section class="review">
         <div class="container">
