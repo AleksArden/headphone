@@ -1,0 +1,32 @@
+.review {
+  @include section;
+}
+.review__title {
+  @extend %title;
+}
+.review__video {
+  margin-bottom: 32px;
+  width: 280px;
+  height: 155px;
+}
+
+.review__link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #df3d3a;
+}
+
+.review__text {
+  margin-bottom: 32px;
+}
+.review__btn {
+  padding: 0;
+  color: #df3d3a;
+  background-color: var(--bg-color-primery);
+}
+.review__icon {
+  fill: inherit;
+}

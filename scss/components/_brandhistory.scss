@@ -3,28 +3,20 @@
   @include mq(tab) {
     @include section(50px, 50px);
   }
+  @include mq(desk) {
+    @include section(85px, 85px);
+  }
 }
 
-// .brandhistory__container {
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 150px;
-//   margin-left: 110px;
-// }
-.brandhistory__content {
+.brandhistory__container {
   @include mq(tab) {
     position: relative;
   }
-}
-.brandhistory__content:not(:last-child) {
-  margin-bottom: 16px;
-  @include mq(tab) {
-    margin-bottom: 32px;
+  @include mq(desk) {
+    margin-left: 110px;
   }
 }
-// .brandhistory__contant-left {
-//   min-width: 400px;
-// }
+
 .brandhistory__title {
   @extend %title;
 }
@@ -32,16 +24,35 @@
   @include mq(tab) {
     width: 294px;
   }
+  @include mq(desk) {
+    width: 400px;
+  }
 }
 .brandhistory__text:nth-child(2) {
   margin-bottom: 32px;
-  @include mq(tab) {
+  @include mq(desk) {
+    margin-bottom: 16px;
   }
 }
-.brandhistory__text:nth-child(1) {
+.brandhistory__text:nth-child(4) {
+  margin-bottom: 16px;
+  @include mq(tab) {
+    margin-bottom: 32px;
+  }
+  @include mq(desk) {
+    margin-bottom: 41px;
+  }
+}
+.brandhistory__text:nth-child(5) {
   margin-bottom: 32px;
   @include mq(tab) {
     margin-left: 354px;
+    margin-bottom: 108px;
+  }
+  @include mq(desk) {
+    margin-left: 554px;
+    margin-bottom: 89px;
+    width: 510px;
   }
 }
 
@@ -57,24 +68,31 @@
     top: 0;
     right: -60px;
   }
+  @include mq(desk) {
+    right: -80px;
+  }
 }
-
-// .brandhistory__image-large {
-//   margin-right: -80px;
-//   margin-bottom: 51px;
-// }
+.brandhistory__image-bottom {
+  @include mq(tab) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
 
 .brandhistory__icon {
   margin-bottom: 24px;
   @include mq(tab) {
     margin-left: 354px;
+    margin-bottom: 52px;
   }
   @include mq(desk) {
+    margin-left: 554px;
     margin-bottom: 50px;
   }
 }
 
-.brandhistory__quote {
+.brandhistory__text:nth-child(8) {
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 20px;
@@ -82,16 +100,26 @@
   color: var(--color-title);
   @include mq(tab) {
     margin-left: 354px;
+    margin-bottom: 32px;
   }
-  // width: 382px;
+  @include mq(desk) {
+    margin-left: 554px;
+    width: 360px;
+    font-size: 28px;
+  }
 }
 
-.brandhistory__sign {
+.brandhistory__text:last-child {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.4);
   @include mq(tab) {
     margin-left: 354px;
+    font-size: 16px;
+    line-height: 0.7;
+  }
+  @include mq(desk) {
+    margin-left: 554px;
   }
 }

@@ -21,7 +21,7 @@
   --bg-btn-hover-hero: #b5302d;
 }
 
-.brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
+.review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 24px;
@@ -31,12 +31,12 @@
   color: var(--color-title);
 }
 @media screen and (min-width: 768px) {
-  .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
+  .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
+  .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
     margin-bottom: 50px;
     font-size: 54px;
   }
@@ -384,14 +384,14 @@ a {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 320px) {
   .container {
     max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -819,19 +819,21 @@ a {
     padding-bottom: 50px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .brandhistory__content {
-    position: relative;
+@media screen and (min-width: 1440px) {
+  .brandhistory {
+    padding-top: 85px;
+    padding-bottom: 85px;
   }
 }
 
-.brandhistory__content:not(:last-child) {
-  margin-bottom: 16px;
-}
 @media screen and (min-width: 768px) {
-  .brandhistory__content:not(:last-child) {
-    margin-bottom: 32px;
+  .brandhistory__container {
+    position: relative;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .brandhistory__container {
+    margin-left: 110px;
   }
 }
 
@@ -840,16 +842,49 @@ a {
     width: 294px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .brandhistory__text {
+    width: 400px;
+  }
+}
 
 .brandhistory__text:nth-child(2) {
   margin-bottom: 32px;
 }
-.brandhistory__text:nth-child(1) {
+@media screen and (min-width: 1440px) {
+  .brandhistory__text:nth-child(2) {
+    margin-bottom: 16px;
+  }
+}
+
+.brandhistory__text:nth-child(4) {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .brandhistory__text:nth-child(4) {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .brandhistory__text:nth-child(4) {
+    margin-bottom: 41px;
+  }
+}
+
+.brandhistory__text:nth-child(5) {
   margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
-  .brandhistory__text:nth-child(1) {
+  .brandhistory__text:nth-child(5) {
     margin-left: 354px;
+    margin-bottom: 108px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .brandhistory__text:nth-child(5) {
+    margin-left: 554px;
+    margin-bottom: 89px;
+    width: 510px;
   }
 }
 
@@ -869,6 +904,19 @@ a {
     right: -60px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .brandhistory__image-top {
+    right: -80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brandhistory__image-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
 
 .brandhistory__icon {
   margin-bottom: 24px;
@@ -876,15 +924,17 @@ a {
 @media screen and (min-width: 768px) {
   .brandhistory__icon {
     margin-left: 354px;
+    margin-bottom: 52px;
   }
 }
 @media screen and (min-width: 1440px) {
   .brandhistory__icon {
+    margin-left: 554px;
     margin-bottom: 50px;
   }
 }
 
-.brandhistory__quote {
+.brandhistory__text:nth-child(8) {
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 20px;
@@ -892,21 +942,70 @@ a {
   color: var(--color-title);
 }
 @media screen and (min-width: 768px) {
-  .brandhistory__quote {
+  .brandhistory__text:nth-child(8) {
     margin-left: 354px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .brandhistory__text:nth-child(8) {
+    margin-left: 554px;
+    width: 360px;
+    font-size: 28px;
   }
 }
 
-.brandhistory__sign {
+.brandhistory__text:last-child {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.4);
 }
 @media screen and (min-width: 768px) {
-  .brandhistory__sign {
+  .brandhistory__text:last-child {
     margin-left: 354px;
+    font-size: 16px;
+    line-height: 0.7;
   }
+}
+@media screen and (min-width: 1440px) {
+  .brandhistory__text:last-child {
+    margin-left: 554px;
+  }
+}
+
+.review {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.review__video {
+  margin-bottom: 32px;
+  width: 280px;
+  height: 155px;
+}
+
+.review__link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #df3d3a;
+}
+
+.review__text {
+  margin-bottom: 32px;
+}
+
+.review__btn {
+  padding: 0;
+  color: #df3d3a;
+  background-color: var(--bg-color-primery);
+}
+
+.review__icon {
+  fill: inherit;
 }
 
 /* benefits */
