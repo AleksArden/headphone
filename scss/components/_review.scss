@@ -1,5 +1,8 @@
 .review {
   @include section;
+  @include mq(tab) {
+    @include section(50px, 50px);
+  }
 }
 .review__title {
   @extend %title;
@@ -8,6 +11,10 @@
   margin-bottom: 32px;
   width: 280px;
   height: 155px;
+  @include mq(tab) {
+    width: 640px;
+    height: 360px;
+  }
 }
 
 .review__link {
@@ -16,17 +23,20 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
-  color: #df3d3a;
+  color: var(--bg-btn-hero);
 }
 
 .review__text {
-  width: 258px;
   margin-bottom: 32px;
 }
 
 .slick-dots {
   display: flex;
   justify-content: center;
+  gap: 39px;
+  @include mq(tab) {
+    gap: 80px;
+  }
 }
 .slick-dots li {
   margin-right: 0;
@@ -41,14 +51,39 @@
   border: none;
   outline: none;
 }
-#slick-slide-control00:before {
+.slick-dots li button[aria-label='1 of 3']:before {
   content: '';
-  opacity: 1;
-  width: 12px;
-  height: 12px;
-
+  opacity: 0.2;
+  width: 20px;
+  height: 25px;
+  color: transparent;
   background-image: url(../images/icons/btn01.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.slick-dots li button[aria-label='2 of 3']:before {
+  content: '';
+  opacity: 0.2;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn02.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slick-dots li button[aria-label='3 of 3']:before {
+  content: '';
+  opacity: 0.2;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn03.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
 }

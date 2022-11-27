@@ -12,6 +12,13 @@
   font-display: swap;
   src: url(../font/Gilroy-Semibold.woff), url(../font/Gilroy-Semibold.woff2);
 }
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/RobotoCondensed-Regular.ttf);
+}
 :root {
   --bg-color-primery: #191919;
   --color-text-primery: rgba(255, 255, 255, 0.8);
@@ -978,11 +985,23 @@ a {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+@media screen and (min-width: 768px) {
+  .review {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
 .review__video {
   margin-bottom: 32px;
   width: 280px;
   height: 155px;
+}
+@media screen and (min-width: 768px) {
+  .review__video {
+    width: 640px;
+    height: 360px;
+  }
 }
 
 .review__link {
@@ -991,11 +1010,10 @@ a {
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
-  color: #df3d3a;
+  color: var(--bg-btn-hero);
 }
 
 .review__text {
-  width: 258px;
   margin-bottom: 32px;
 }
 
@@ -1008,17 +1026,65 @@ a {
           justify-content: center;
   gap: 39px;
 }
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    gap: 80px;
+  }
+}
 
-#slick-slide-control00,
-#slick-slide-control01,
-#slick-slide-control02 {
+.slick-dots li {
+  margin-right: 0;
+  margin-left: 0;
+  width: 20px;
+  height: 25px;
+}
+
+.slick-dots li button {
   width: 20px;
   height: 25px;
   padding: 0;
-  color: #df3d3a;
-  background-color: var(--bg-color-primery);
   border: none;
   outline: none;
+}
+
+.slick-dots li button[aria-label="1 of 3"]:before {
+  content: "";
+  opacity: 0.2;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn01.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-dots li button[aria-label="2 of 3"]:before {
+  content: "";
+  opacity: 0.2;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn02.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-dots li button[aria-label="3 of 3"]:before {
+  content: "";
+  opacity: 0.2;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn03.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
 }
 
 /* benefits */
