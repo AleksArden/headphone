@@ -20,13 +20,35 @@
 }
 
 .review__text {
+  width: 258px;
   margin-bottom: 32px;
 }
-.review__btn {
-  padding: 0;
-  color: #df3d3a;
-  background-color: var(--bg-color-primery);
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
 }
-.review__icon {
-  fill: inherit;
+.slick-dots li {
+  margin-right: 0;
+  margin-left: 0;
+  width: 20px;
+  height: 25px;
+}
+.slick-dots li button {
+  width: 20px;
+  height: 25px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+#slick-slide-control00:before {
+  content: '';
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+
+  background-image: url(../images/icons/btn01.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

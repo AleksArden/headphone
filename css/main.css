@@ -995,17 +995,30 @@ a {
 }
 
 .review__text {
+  width: 258px;
   margin-bottom: 32px;
 }
 
-.review__btn {
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 39px;
+}
+
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02 {
+  width: 20px;
+  height: 25px;
   padding: 0;
   color: #df3d3a;
   background-color: var(--bg-color-primery);
-}
-
-.review__icon {
-  fill: inherit;
+  border: none;
+  outline: none;
 }
 
 /* benefits */
