@@ -27,7 +27,6 @@
 }
 
 %btn {
-  // max-width: 280px;
   padding: 19px 100px 20px 101px;
   @include mq(tab) {
     padding: 19px 107px 20px 108px;
@@ -37,7 +36,6 @@
     font-size: 20px;
     padding: 22px 95px;
   }
-  border: none;
   background-color: var(--bg-btn-hero);
   color: var(--color-btn);
   font-weight: 600;

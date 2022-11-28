@@ -28,7 +28,7 @@
   --bg-btn-hover-hero: #b5302d;
 }
 
-.review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
+.questions__title, .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 24px;
@@ -38,12 +38,12 @@
   color: var(--color-title);
 }
 @media screen and (min-width: 768px) {
-  .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
+  .questions__title, .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
+  .questions__title, .review__title, .brandhistory__title, .garanties__title, .features__title, .promo__title, .benefits__title, .design__title {
     margin-bottom: 50px;
     font-size: 54px;
   }
@@ -63,7 +63,6 @@
 
 .hero__btn {
   padding: 19px 100px 20px 101px;
-  border: none;
   background-color: var(--bg-btn-hero);
   color: var(--color-btn);
   font-weight: 600;
@@ -139,6 +138,13 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 
 .header {
@@ -991,6 +997,26 @@ a {
     padding-bottom: 50px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .review {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .fade {
+    position: relative;
+    margin-left: -80px;
+    min-width: 1360px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .review__title {
+    margin-left: 1070px;
+  }
+}
 
 .review__video {
   margin-bottom: 32px;
@@ -1003,6 +1029,15 @@ a {
     height: 360px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .review__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 920px;
+    height: 520px;
+  }
+}
 
 .review__link {
   display: inline-block;
@@ -1012,9 +1047,20 @@ a {
   line-height: 125%;
   color: var(--bg-btn-hero);
 }
+@media screen and (min-width: 1440px) {
+  .review__link {
+    margin-left: 1070px;
+    font-size: 28px;
+  }
+}
 
 .review__text {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1440px) {
+  .review__text {
+    margin-left: 1070px;
+  }
 }
 
 .slick-dots {
@@ -1031,6 +1077,14 @@ a {
     gap: 80px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .slick-dots {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 1070px;
+  }
+}
 
 .slick-dots li {
   margin-right: 0;
@@ -1038,18 +1092,27 @@ a {
   width: 20px;
   height: 25px;
 }
+@media screen and (min-width: 1440px) {
+  .slick-dots li {
+    width: 28px;
+    height: 35px;
+  }
+}
 
 .slick-dots li button {
   width: 20px;
   height: 25px;
-  padding: 0;
-  border: none;
-  outline: none;
+}
+@media screen and (min-width: 1440px) {
+  .slick-dots li button {
+    width: 28px;
+    height: 35px;
+  }
 }
 
 .slick-dots li button[aria-label="1 of 3"]:before {
   content: "";
-  opacity: 0.2;
+  opacity: 0.4;
   width: 20px;
   height: 25px;
   color: transparent;
@@ -1058,10 +1121,17 @@ a {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1440px) {
+  .slick-dots li button[aria-label="1 of 3"]:before {
+    width: 28px;
+    height: 35px;
+    background-image: url(../images/icons/01-desk.svg);
+  }
+}
 
 .slick-dots li button[aria-label="2 of 3"]:before {
   content: "";
-  opacity: 0.2;
+  opacity: 0.4;
   width: 20px;
   height: 25px;
   color: transparent;
@@ -1070,10 +1140,17 @@ a {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1440px) {
+  .slick-dots li button[aria-label="2 of 3"]:before {
+    width: 28px;
+    height: 35px;
+    background-image: url(../images/icons/02-desk.svg);
+  }
+}
 
 .slick-dots li button[aria-label="3 of 3"]:before {
   content: "";
-  opacity: 0.2;
+  opacity: 0.4;
   width: 20px;
   height: 25px;
   color: transparent;
@@ -1082,9 +1159,50 @@ a {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1440px) {
+  .slick-dots li button[aria-label="3 of 3"]:before {
+    width: 28px;
+    height: 35px;
+    background-image: url(../images/icons/03-desk.svg);
+  }
+}
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
+}
+
+.questions {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.questions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.questions__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.questions__number {
+  margin-right: 16px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.7;
+  color: #e7e7e7;
+}
+
+.questions__btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  fill: var(--color-text-primery);
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 /* benefits */
