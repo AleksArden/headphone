@@ -49,14 +49,14 @@
   }
 }
 
-.garanties__subtitle, .features__subtitle, .promo__substyle, .design__subtitle {
+.questions__subtitle, .garanties__subtitle, .features__subtitle, .promo__substyle, .design__subtitle {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
   color: var(--color-title);
 }
 @media screen and (min-width: 1440px) {
-  .garanties__subtitle, .features__subtitle, .promo__substyle, .design__subtitle {
+  .questions__subtitle, .garanties__subtitle, .features__subtitle, .promo__substyle, .design__subtitle {
     font-size: 28px;
   }
 }
@@ -1175,15 +1175,57 @@ button {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+@media screen and (min-width: 768px) {
+  .questions {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .questions {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .questions__title {
+    margin-left: 110px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .questions__list {
+    width: 1060px;
+    margin-left: 110px;
+  }
+}
 
 .questions__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .questions__item {
+    padding-bottom: 37px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .questions__item {
+    padding-bottom: 24px;
+  }
 }
 
 .questions__item:not(:last-child) {
   margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .questions__item:not(:last-child) {
+    margin-bottom: 84px;
+  }
 }
 
 .questions__number {
@@ -1192,11 +1234,49 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 0.7;
+  line-height: 1;
   color: #e7e7e7;
+}
+@media screen and (min-width: 768px) {
+  .questions__number {
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .questions__number {
+    margin-right: 32px;
+    font-size: 28px;
+    line-height: 0.9;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .questions__content {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .questions__content {
+    width: 850px;
+  }
+}
+
+.questions__subtitle {
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+  .questions__subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .questions__subtitle {
+    font-size: 28px;
+  }
 }
 
 .questions__btn {
+  margin-left: auto;
   width: 32px;
   height: 32px;
   border-radius: 50%;

@@ -71,7 +71,7 @@
                   <a class="menu__link" href="#">Характеристики</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">История</a>
+                  <a class="menu__link" href="#history">История</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="#">Отзывы</a>
@@ -101,7 +101,7 @@
                 <a class="desktop-header__link" href="#">Характеристики</a>
               </li>
               <li>
-                <a class="desktop-header__link" href="#">История</a>
+                <a class="desktop-header__link" href="#history">История</a>
               </li>
               <li>
                 <a class="desktop-header__link" href="#">Отзывы</a>
@@ -371,7 +371,7 @@
         </div>
       </section>
       <!-- brandhistory section -->
-      <section class="brandhistory">
+      <section class="brandhistory" id="history">
         <div class="container">
           <div class="brandhistory__container">
             <h2 class="brandhistory__title">история <br />создания <br />бренда</h2>
@@ -504,44 +504,57 @@
       <section class="questions">
         <div class="container">
           <h2 class="questions__title">FAQ</h2>
-          <ul>
+          <ul class="questions__list">
             <li class="questions__item">
               <span class="questions__number">01</span>
-              <p>Как выполнить сопряжение с мобильным устройством?</p>
+              <div class="questions__content" data-action="0">
+                <h3 class="questions__subtitle">
+                  Как выполнить сопряжение с мобильным устройством?
+                </h3>
+              </div>
               <button class="questions__btn" type="button">
                 <svg class="questions__icon" width="32" height="32" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-mark-question"></use>
+                  <use href="./images/icons.svg#icon-mark-question" data-action="0"></use>
                 </svg>
               </button>
             </li>
             <li class="questions__item">
               <span class="questions__number">02</span>
-              <p>Каков диапазон беспроводной связи у Bose NC 700?</p>
+              <div class="questions__content" data-action="1">
+                <h3 class="questions__subtitle">
+                  Каков диапазон беспроводной связи у Bose NC 700?
+                </h3>
+              </div>
               <button class="questions__btn" type="button">
                 <svg class="questions__icon" width="32" height="32" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-mark-question"></use>
+                  <use href="./images/icons.svg#icon-mark-question" data-action="1"></use>
                 </svg>
               </button>
             </li>
             <li class="questions__item">
               <span class="questions__number">03</span>
-              <p>Как сложить наушники Bose NC 700 для хранения?</p>
+              <div class="questions__content" data-action="2">
+                <h3 class="questions__subtitle">Как сложить наушники Bose NC 700 для хранения?</h3>
+              </div>
               <button class="questions__btn" type="button">
                 <svg class="questions__icon" width="32" height="32" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-mark-question"></use>
+                  <use href="./images/icons.svg#icon-mark-question" data-action="2"></use>
                 </svg>
               </button>
             </li>
             <li class="questions__item">
               <span class="questions__number">04</span>
-              <p>Работает ли гарантия на международном уровне?</p>
+              <div class="questions__content" data-action="3">
+                <h3 class="questions__subtitle">Работает ли гарантия на международном уровне?</h3>
+              </div>
               <button class="questions__btn" type="button">
                 <svg class="questions__icon" width="32" height="32" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-mark-question"></use>
+                  <use href="./images/icons.svg#icon-mark-question" data-action="3"></use>
                 </svg>
               </button>
             </li>
           </ul>
+          <p></p>
         </div>
       </section>
     </main>
@@ -558,6 +571,7 @@
         </ul>
       </div>
     </footer> -->
+    <script type="module" src="./js/questions.js"></script>
     <!-- slick jquery -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
