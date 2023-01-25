@@ -73,6 +73,13 @@
                 d="M261.102 8.212c0-0.252-0.112-0.52-0.335-0.65-0.232-0.13-0.485-0.145-0.739-0.145h-1.322v3.019h0.449v-1.391h0.53l0.866 1.391h0.515l-0.918-1.391c0.537-0.015 0.955-0.237 0.955-0.833zM259.647 8.67h-0.493v-0.91h0.784c0.381 0 0.717 0.053 0.717 0.443 0 0.543-0.582 0.466-1.008 0.466z">
             </path>
         </symbol>
+        <symbol id="icon-vector-checkbox" viewBox="0 0 38 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636"
+                d="M2.909 18.909l10.46 10.46c0.622 0.622 1.651 0.554 2.185-0.146l20.082-26.314"></path>
+            <!-- <path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4"
+                stroke-width="139.6364" stroke="#000"
+                d="M93.091 605.091l334.734 334.736c19.918 19.917 52.826 17.715 69.913-4.678l642.625-842.058"></path> -->
+        </symbol>
 
     </defs>
 </svg>
